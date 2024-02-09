@@ -1,0 +1,19 @@
+netstat -ano | findstr :5001
+
+taskkill /PID 32344 /F
+
+
+docker run -d -p 5000:5000 in28min/hello-world-java:0.0.1.RELEASE (docker -d (detach) -p (port))
+
+docker logs <docker_ID> 
+
+-----
+
+docker logs 4aff6861ac5f4b1a3aee6346ff8707660dce1b39b832b46dfb076048c1cf571b
+
+docker logs 4aff
+
+see docker logs continously
+-------------------------
+
+docker logs -f 4aff
