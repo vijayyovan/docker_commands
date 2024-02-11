@@ -17,3 +17,10 @@ see docker logs continously
 -------------------------
 
 docker logs -f 4aff
+
+=============================================
+docker images ls
+
+docker container stop <image>
+
+docker rmi $(docker inspect -f '{{.Image}}' e43a47cd9918)
