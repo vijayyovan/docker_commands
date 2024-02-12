@@ -19,7 +19,13 @@ see docker logs continously
 docker logs -f 4aff
 
 =============================================
-docker images ls
+Stop docker image
+important step follow holistically:
+=============
+1. Stop container 
+2. remove container 
+======================================
+docker images ls -a
 
 docker container stop <image>
 
