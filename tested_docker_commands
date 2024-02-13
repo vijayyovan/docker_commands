@@ -24,9 +24,40 @@ important step follow holistically:
 =============
 1. Stop container 
 2. remove container 
+
+PS C:\Users\vijay> docker container ls -a
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED        STATUS                      PORTS     NAMES
+3e20e4c4b6c5   in28min/hello-world-java:0.0.1.RELEASE     "sh -c 'java -jar /h…"   14 hours ago   Exited (143) 14 hours ago             mystifying_morse
+10b0e2eb1be6   in28min/hello-world-python:0.0.1.RELEASE   "/bin/sh -c 'python …"   14 hours ago   Exited (0) 14 hours ago     
+
+
 ======================================
 docker images ls -a
 
 docker container stop <image>
 
 docker rmi $(docker inspect -f '{{.Image}}' e43a47cd9918)
+
+==============================
+docker images
+docker container ls -a
+docker image rm 3e20e4c4b6c5
+docker image stop 3e20e4c4b6c5
+docker container stop 3e20e4c4b6c5
+docker container rm 3e20e4c4b6c5
+docker container ls -a
+docker image rm 10b0e2eb1be6
+docker container stop 10b0e2eb1be6
+docker container rm 10b0e2eb1be6
+  50 docker images
+  51 docker run -p 5000:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+  52 docker container ls
+  53 docker container kill 80c
+  54 docker container ls
+  55 docker container ls -a
+  56 docker container inspect 80c4755dc1ea
+  57 docker container ls -a
+  58 docker container prune
+  59 docker container ls -a
+
+
