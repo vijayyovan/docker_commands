@@ -4,6 +4,10 @@ docker container ls
 
 docker container stop 71
 
+==============
+
+==================
+
 docker system events
 
 =========================
@@ -11,6 +15,8 @@ docker assign memmory and specific cpu quota ( full value is 10000 , assign it t
 ========================
 
 docker container run -p 5000:5000 -d -m 512m --cpu-quota=50000 in28min/hello-world-java:0.0.1.RELEASE
+
+
 
 
 
