@@ -1,0 +1,6 @@
+docker info|grep -i ID
+docker build -t vijaysoundaram/hello-world-python:0.0.2.RELEASE .
+cd C:\Users\vijay\OneDrive\Desktop\devops-master-class\projects\hello-world\hello-world-python
+docker build -t vijaysoundaram/hello-world-python:0.0.2.RELEASE .
+docker images
+docker push vijaysoundaram/hello-world-python:0.0.2.RELEASE
